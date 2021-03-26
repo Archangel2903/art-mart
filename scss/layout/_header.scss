@@ -1,0 +1,298 @@
+/***********************************************************
+*************************** HEADER *************************
+***********************************************************/
+header {
+  order: 1;
+  -webkit-order: 1;
+  width: 100%;
+  min-width: $min-width;
+  text-align: left;
+}
+
+.header-content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  &__box {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 85%;
+  }
+  &__top {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 20px 20px;
+    border-bottom: 1px solid $site-color;
+  }
+  &__top-text {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .logo-block {
+    width: 15%;
+  }
+}
+
+.logo-block {
+  position: relative;
+  display: inline-block;
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    @include transform(translate(-50%, -50%) skew(-50grad));
+    z-index: -1;
+  }
+  &__link {
+    display: block;
+  }
+  &__img {
+    display: block;
+    width: 155px;
+    height: 145px;
+  }
+}
+
+.contacts-block {
+  &__list {
+    margin-bottom: 15px;
+  }
+  &__list-item {
+    margin-bottom: 5px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: #1a151c;
+    font-weight: 700;
+    font-size: 1em;
+    &:hover {
+      color: $site-color;
+    }
+  }
+  &__button {
+    &.site-btn {
+      height: 24px;
+      padding: 5px 25px;
+      font-size: 0.667em;
+    }
+  }
+}
+
+.social-block {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  &__item {
+    margin-right: 20px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    color: #999999;
+    font-size: 34px;
+    &:hover {
+      color: $site-color;
+    }
+  }
+}
+
+.header-cart {
+  display: inline-block;
+  .si {
+    position: relative;
+    font-size: 37px;
+    /*span:not(.path1) {
+      position: absolute;
+      top: 0;
+    }*/
+  }
+  &__counter {
+    display: inline-block;
+  }
+  &__counter-text {
+    padding: 0;
+    font-weight: 300;
+    font-size: 1em;
+    &.items-text {
+
+    }
+    &.sum-text {
+      color: $site-color;
+    }
+  }
+}
+
+.header-menu {
+  width: 100%;
+  padding-left: 20px;
+  &__button-open {
+    position: relative;
+    display: none;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    margin: 0 0 0 auto;
+    font-size: 2.222em;
+    background: none;
+  }
+  &__button-close {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    color: $site-color;
+    font-size: 1.5em;
+    background: none;
+    @include translate(-50%, 0);
+  }
+  &__list {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  &__list-item {
+    position: relative;
+    display: inline-block;
+  }
+  &__list-link {
+    display: inline-block;
+    padding: 15px 35px 25px;
+    color: #474958;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    &:hover {
+      color: $site-color;
+    }
+    .si {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 0.889em;
+    }
+  }
+  &__dropdown-box {
+    position: absolute;
+    top: 150%;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: #f0efef;
+    @include transition($default-transition);
+    &.opened {
+      top: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__dropdown-list {
+    padding: 10px 0;
+  }
+  &__dropdown-item {
+
+  }
+  &__dropdown-link {
+    display: block;
+    padding: 19px 25px;
+    color: #474958;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    &:hover {
+      color: $site-color;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+/***********************************************************
+*************************** FOOTER *************************
+***********************************************************/
+footer {
+  order: 3;
+  -webkit-order: 3;
+  width: 100%;
+  min-width: $min-width;
+  text-align: left;
+  background: #000;
+}
+
+.footer-content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 40px 0 65px 25.5%;
+}
+
+.footer-menu {
+  &__list {
+    display: inline-block;
+    max-width: 30%;
+    margin: 0 60px 0 0;
+    vertical-align: top;
+  }
+  &__list-item {
+    margin: 0 0 15px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    &:hover {
+      color: $site-color;
+    }
+  }
+}
+
+.footer-contacts {
+  text-align: right;
+  .contacts-block {
+    display: block;
+    margin-bottom: 30px;
+    &__list-item {
+      color: #ffffff;
+    }
+    &__link {
+      color: #ffffff;
+    }
+  }
+  .social-block {
+    &__link {
+      color: #ffffff;
+      &:hover {
+        color: $site-color;
+      }
+    }
+  }
+}

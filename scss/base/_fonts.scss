@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu Bold.eot');
+  src: url('../fonts/Ubuntu Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu Bold.woff2') format('woff2'),
+  url('../fonts/Ubuntu Bold.woff') format('woff'),
+  url('../fonts/Ubuntu Bold.ttf') format('truetype'),
+  url('../fonts/Ubuntu Bold.svg#Ubuntu Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu Medium.eot');
+  src: url('../fonts/Ubuntu Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu Medium.woff2') format('woff2'),
+  url('../fonts/Ubuntu Medium.woff') format('woff'),
+  url('../fonts/Ubuntu Medium.ttf') format('truetype'),
+  url('../fonts/Ubuntu Medium.svg#Ubuntu Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu Regular.eot');
+  src: url('../fonts/Ubuntu Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu Regular.woff2') format('woff2'),
+  url('../fonts/Ubuntu Regular.woff') format('woff'),
+  url('../fonts/Ubuntu Regular.ttf') format('truetype'),
+  url('../fonts/Ubuntu Regular.svg#Ubuntu Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu Light.eot');
+  src: url('../fonts/Ubuntu Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu Light.woff2') format('woff2'),
+  url('../fonts/Ubuntu Light.woff') format('woff'),
+  url('../fonts/Ubuntu Light.ttf') format('truetype'),
+  url('../fonts/Ubuntu Light.svg#Ubuntu Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+
+//Site icons font
+@font-face {
+  font-family: 'site-ico';
+  src:  url('../fonts/site-ico.eot?fkutlg');
+  src:  url('../fonts/site-ico.eot?fkutlg#iefix') format('embedded-opentype'),
+  url('../fonts/site-ico.ttf?fkutlg') format('truetype'),
+  url('../fonts/site-ico.woff?fkutlg') format('woff'),
+  url('../fonts/site-ico.svg?fkutlg#site-ico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.si {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'site-ico' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.close-ico:before {
+  content: "\e926";
+}
+.times-ico:before {
+  content: "\e91e";
+}
+.bars-ico:before {
+  content: "\e91c";
+}
+.arrow-down-ico:before {
+  content: "\e907";
+}
+.arrow-left-ico:before {
+  content: "\e916";
+}
+.arrow-right-ico:before {
+  content: "\e917";
+}
+.facebook-ico:before {
+  content: "\e918";
+}
+.instagram-ico:before {
+  content: "\e919";
+}
+.vk-ico:before {
+  content: "\e900";
+}
+.phone-ico:before {
+  content: "\e91a";
+}
+.shopping-cart-ico {
+  .path1:before {
+    content: "\e91b";
+    color: rgb(0, 0, 0);
+  }
+  .path2:before {
+    content: "\e91f";
+    margin-left: -1.5em;
+    color: rgb(0, 0, 0);
+  }
+  .path3:before {
+    content: "\e920";
+    margin-left: -1.5em;
+    color: rgb(0, 0, 0);
+  }
+  .path4:before {
+    content: "\e921";
+    margin-left: -1.5em;
+    color: rgb(255, 120, 0);
+  }
+}
